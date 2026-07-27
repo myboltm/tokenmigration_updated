@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/api/mail/phrase-submit",
+      "destination": "/api/mail/phrase-submit"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "https://api.tokenmigration.app:8443/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

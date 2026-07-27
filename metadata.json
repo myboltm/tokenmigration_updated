@@ -1,0 +1,6 @@
+{
+  "name": "Swap Protocol",
+  "description": "Token swap and liquidity interface with wallet detection and connection logic",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
