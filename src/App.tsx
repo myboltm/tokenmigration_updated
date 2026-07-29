@@ -1446,19 +1446,20 @@ export default function App() {
                 </div>
 
                 {/* Wallet icon with ring + badges */}
-                <div style={{ position: 'relative', width: '70px', height: '70px', margin: '0 auto 14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, justifyContent: 'center' }}>
+                <div style={{ position: 'relative', width: '86px', height: '86px', margin: '0 auto 14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   {!declined && (
-                    <svg style={{ position: 'absolute', inset: '-4px', width: '78px', height: '78px', overflow: 'visible' }} viewBox="-4 -4 78 78">
-                      <rect fill="none" stroke="#222" strokeWidth="3" x="0" y="0" width="70" height="70" rx="20" ry="20" />
-                      <rect fill="none" stroke="#3b5bdb" strokeWidth="3" strokeLinecap="round" x="0" y="0" width="70" height="70" rx="20" ry="20"
-                        strokeDasharray="124 248"
+                    <svg style={{ position: 'absolute', inset: '-4px', width: '94px', height: '94px', overflow: 'visible' }} viewBox="-4 -4 94 94">
+                      <rect fill="none" stroke="#222" strokeWidth="3" x="0" y="0" width="86" height="86" rx="24" ry="24" />
+                      <rect fill="none" stroke="#3b5bdb" strokeWidth="3" strokeLinecap="round" x="0" y="0" width="86" height="86" rx="24" ry="24"
+                        strokeDasharray="152 304"
                         style={{ animation: 'dash-spin 1.2s linear infinite' }} />
                     </svg>
                   )}
                   <img
                     src={selectedWallet.icon || undefined}
                     alt={selectedWallet.name}
-                    style={{ width: '64px', height: '64px', borderRadius: '16px', display: 'block', position: 'relative', zIndex: 1 }}
+                    style={{ width: '80px', height: '80px', borderRadius: '20px', display: 'block', position: 'relative', zIndex: 1 }}
                   />
                   {/* WalletConnect badge */}
                   <div style={{ position: 'absolute', bottom: '-5px', left: '-5px', width: '22px', height: '22px', borderRadius: '50%', background: '#1a1a2e', border: '2px solid #111', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}>
@@ -1493,6 +1494,7 @@ export default function App() {
                     <div className="wc-subtitle" style={{ marginBottom: '14px' }}>Approve the connection request in your wallet</div>
                   </>
                 )}
+                </div>
 
                 {declined && (
                   <div className="wc-footer" style={{ marginTop: '16px' }}>
