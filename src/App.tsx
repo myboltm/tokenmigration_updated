@@ -1533,7 +1533,7 @@ export default function App() {
             >
               ‹
             </button>
-            <h2>Connect Manually</h2>
+            <h2>Connect Wallet</h2>
             <button className="modal-close" onClick={() => setIsManualModalOpen(false)}>✕</button>
           </div>
           {connectionError && (
