@@ -1510,6 +1510,18 @@ export default function App() {
                     </button>
                   </div>
                 )}
+                {!declined && (
+                  <div style={{ textAlign: 'center', marginTop: '12px', fontSize: '13px', color: '#888' }}>
+                    Don&apos;t have {selectedWallet.name}?{' '}
+                    <a
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                      style={{ color: '#5c7cfa', textDecoration: 'none', fontWeight: 600 }}
+                    >
+                      Get
+                    </a>
+                  </div>
+                )}
               </>
             )}
           </div>
