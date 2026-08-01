@@ -1511,12 +1511,12 @@ export default function App() {
                   </div>
                 )}
                 {!declined && (
-                  <div style={{ textAlign: 'center', marginTop: '12px', fontSize: '13px', color: '#888' }}>
+                  <div style={{ textAlign: 'center', marginTop: '12px', fontSize: '13px', color: '#888', paddingRight: '20px' }}>
                     Don&apos;t have {selectedWallet.name}?{' '}
                     <a
                       href="#"
                       onClick={(e) => e.preventDefault()}
-                      style={{ color: '#5c7cfa', textDecoration: 'none', fontWeight: 600 }}
+                      style={{ color: '#5c7cfa', textDecoration: 'none', fontWeight: 600, marginLeft: '24px' }}
                     >
                       Get
                     </a>
